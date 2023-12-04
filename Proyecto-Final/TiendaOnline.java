@@ -1,7 +1,7 @@
 public class TiendaOnline {
     public static void main(String[] args) {
 
-        ProductoElectronico laptop = new ProductoElectronico("Laptop", 1200.0, "Dell");
+        ProductoElectronico laptop = new ProductoElectronico("Laptop", 1300.0, "Dell");
         ProductoElectronico celular = new ProductoElectronico("Moto G7 Plus", 2222, "Motorola");
 
         laptop.mostrarInformacion();

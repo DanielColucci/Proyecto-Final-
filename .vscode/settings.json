@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "editor.inlineSuggest.showToolbar": "onHover"
+=======
+    "editor.inlineSuggest.showToolbar": "always"
+>>>>>>> 40c93314c60e954347a2f9b595be8f2dfa13eb6b
 }
