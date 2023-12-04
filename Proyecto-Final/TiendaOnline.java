@@ -1,20 +1,14 @@
 public class TiendaOnline {
     public static void main(String[] args) {
+        Tienda<ProductoBase> tienda = new Tienda<>();
 
-        ProductoElectronico laptop = new ProductoElectronico("Laptop", 1300.0, "Dell");
-        ProductoElectronico celular = new ProductoElectronico("Moto G7 Plus", 2222, "Motorola");
+        Producto producto1 = new Producto("A", 50);
+        Producto producto2 = new Producto("C", 30);
 
-        laptop.mostrarInformacion();
-        laptop.calcularPrecioConImpuestos(12);
-        
-        celular.mostrarInformacion();
-        celular.calcularPrecioConImpuestos(21);
+        tienda.agregarProducto(producto1);
+        tienda.agregarProducto(producto2);
 
-
-        Pedido pedido = new Pedido(laptop);
-        Pedido pedido2 = new Pedido(celular);
-
-        pedido.procesarEnvio();
-        pedido2.procesarEnvio();
+        PersistenciaTexto.guardarProductosEnTexto(tienda.getProductos(), "productos.txt");
     }
 }
+
